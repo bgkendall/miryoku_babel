@@ -98,7 +98,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 ***** Thumbs
 
 #+NAME: thumbs
-| U_NP  | U_NP  | ESC   | SPC   | TAB   | ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| U_NP  | U_NP  | /     | MINS  | TAB   | SPC   | ENT   | BSPC  | U_NP  | U_NP  |
 
 
 **** Hold
@@ -116,7 +116,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 | CAPS  | LEFT  | DOWN  | UP    | RGHT  |
 | INS   | HOME  | PGDN  | PGUP  | END   |
-| ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| SPC   | ENT   | BSPC  | U_NP  | U_NP  |
 
 
 *** Mouse
@@ -125,7 +125,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 |       | MS_L  | MS_D  | MS_U  | MS_R  |
 |       | WH_L  | WH_D  | WH_U  | WH_R  |
-| BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+| BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
 
 
 *** Button
@@ -142,10 +142,10 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Media
 
 #+NAME: media-r
-| RGB_TOG | RGB_MOD  | RGB_HUI  | RGB_SAI  | RGB_VAI  |
-| EP_TOG  | MPRV     | VOLD     | VOLU     | MNXT     |
-| OUT_TOG | BT_SEL_0 | BT_SEL_1 | BT_SEL_2 | BT_SEL_3 |
-| MSTP    | MPLY     | MUTE     | U_NP     | U_NP     |
+| RGB_TOG       | RGB_MOD       | RGB_HUI        | RGB_SAI        | RGB_VAI       |
+| EP_TOG        | MPRV          | VOLD           | VOLU           | MNXT          |
+| RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
+| MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
 
 *** Num
@@ -179,6 +179,16 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 
 **** Alphas
+
+
+***** Averak
+
+~MIRYOKU_ALPHAS=AVERAK~
+
+#+NAME: averak
+| Q    | W    | R    | P    | F    | J    | Y    | O    | L    | '    |
+| A    | S    | D    | T    | G    | M    | N    | E    | I    | U    |
+| Z    | X    | C    | V    | B    | K    | H    | ,    | DOT  | ESC  |
 
 
 ***** AZERTY
@@ -258,7 +268,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: qwerty
 | Q    | W    | E    | R    | T    | Y    | U    | I    | O    | P    |
 | A    | S    | D    | F    | G    | H    | J    | K    | L    | '    |
-| Z    | X    | C    | V    | B    | N    | M    | ,    | DOT  | /    |
+| Z    | X    | C    | V    | B    | N    | M    | ,    | DOT  | ESC  |
 
 
 ***** QWERTZ
@@ -287,7 +297,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 | LEFT  | DOWN  | UP    | RGHT  | CAPS  |
 | HOME  | PGDN  | PGUP  | END   | INS   |
-| ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| SPC   | ENT   | BSPC  | U_NP  | U_NP  |
 
 
 ****** Mouse
@@ -296,16 +306,16 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 | MS_L  | MS_D  | MS_U  | MS_R  |       |
 | WH_L  | WH_D  | WH_U  | WH_R  |       |
-| BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+| BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
 
 
 ****** Media
 
 #+NAME: media-r-vi
-| RGB_MOD  | RGB_HUI  | RGB_SAI  | RGB_VAI  | RGB_TOG |
-| MPRV     | VOLD     | VOLU     | MNXT     | EP_TOG  |
-| BT_SEL_0 | BT_SEL_1 | BT_SEL_2 | BT_SEL_3 | OUT_TOG |
-| MSTP     | MPLY     | MUTE     | U_NP     | U_NP    |
+| RGB_MOD       | RGB_HUI       | RGB_SAI        | RGB_VAI        | RGB_TOG       |
+| MPRV          | VOLD          | VOLU           | MNXT           | EP_TOG        |
+| RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
+| MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
 
 ***** Inverted-T
@@ -319,7 +329,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | INS   | HOME  | UP    | END   | PGUP  |
 | CAPS  | LEFT  | DOWN  | RGHT  | PGDN  |
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-| ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| SPC   | ENT   | BSPC  | U_NP  | U_NP  |
 
 
 ****** Mouse
@@ -328,16 +338,16 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 |       | WH_L  | MS_U  | WH_R  | WH_U  |
 |       | MS_L  | MS_D  | MS_R  | WH_D  |
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-| BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+| BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
 
 
 ****** Media
 
 #+NAME: media-r-invertedt
-| RGB_TOG | RGB_MOD  | VOLU     | RGB_HUI  | RGB_SAI  |
-| EP_TOG  | MPRV     | VOLD     | MNXT     | RGB_VAI  |
-| OUT_TOG | BT_SEL_0 | BT_SEL_1 | BT_SEL_2 | BT_SEL_3 |
-| MSTP    | MPLY     | MUTE     | U_NP     | U_NP     |
+| RGB_TOG       | RGB_MOD       | VOLU           | RGB_HUI        | RGB_SAI       |
+| EP_TOG        | MPRV          | VOLD           | MNXT           | RGB_VAI       |
+| RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
+| MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
 
 **** Layers
@@ -537,7 +547,7 @@ Modifiers usable in hold table.  Need to have the same name for ~KC_~ and ~_T~
 versions.
 
 #+NAME: mods
-| LSFT | LCTL | LALT | LGUI | ALGR |
+| LSFT | LGUI | LALT | LCTL | ALGR |
 
 
 **** keycode-translation
@@ -588,7 +598,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | AT          | AT          | AT              | @             |
 | BSLS        | BSLS        | BSLH            | \\            |
 | BSPC        | BSPC        | BSPC            | bspc          |
-| BOOT        | RESET       | &bootloader     |               |
+| BOOT        | QK_BOOT     | &bootloader     |               |
 | BT_CLR      |             | &bt BT_CLR      |               |
 | BT_SEL_0    |             | &u_bt_sel_0     |               |
 | BT_SEL_1    |             | &u_bt_sel_1     |               |
