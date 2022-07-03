@@ -105,7 +105,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 #+NAME: hold
 | BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |       | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
-| LGUI     | LALT      | LCTL        | LSFT       |         |       | LSFT       | LCTL        | LALT      | LGUI     |
+| LCTL     | LALT      | LGUI        | LSFT       |         |       | LSFT       | LGUI        | LALT      | LCTL     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
 | U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
@@ -136,7 +136,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 
 #+NAME: button-thumbs
-| U_NP  | U_NP  | BTN3  | BTN1  | BTN2  | BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+| U_NP  | U_NP  | BTN3  | BTN2  | BTN1  | BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
 
 
 *** Media
@@ -880,7 +880,9 @@ Body of miryoku_layer_selection.h.
 
 #if !defined(MIRYOKU_LAYER_BASE)
   #if defined (MIRYOKU_LAYERS_FLIP)
-    #if defined (MIRYOKU_ALPHAS_AZERTY)
+    #if defined (MIRYOKU_ALPHAS_AVERAK)
+      #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_AVERAK_FLIP
+    #elif defined (MIRYOKU_ALPHAS_AZERTY)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP
     #elif defined (MIRYOKU_ALPHAS_BEAKL15)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP
@@ -904,7 +906,9 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH_FLIP
     #endif
   #else
-    #if defined (MIRYOKU_ALPHAS_AZERTY)
+    #if defined (MIRYOKU_ALPHAS_AVERAK)
+      #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_AVERAK
+    #elif defined (MIRYOKU_ALPHAS_AZERTY)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_AZERTY
     #elif defined (MIRYOKU_ALPHAS_BEAKL15)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_BEAKL15
@@ -935,7 +939,9 @@ Body of miryoku_layer_selection.h.
 
 #if !defined(MIRYOKU_LAYER_EXTRA)
   #if defined (MIRYOKU_LAYERS_FLIP)
-    #if defined (MIRYOKU_EXTRA_AZERTY)
+    #if defined (MIRYOKU_EXTRA_AVERAK)
+      #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_AVERAK_FLIP
+    #elif defined (MIRYOKU_EXTRA_AZERTY)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP
     #elif defined (MIRYOKU_EXTRA_BEAKL15)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP
@@ -959,7 +965,9 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_QWERTY_FLIP
     #endif
   #else
-    #if defined (MIRYOKU_EXTRA_AZERTY)
+    #if defined (MIRYOKU_EXTRA_AVERAK)
+      #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_AVERAK
+    #elif defined (MIRYOKU_EXTRA_AZERTY)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_AZERTY
     #elif defined (MIRYOKU_EXTRA_BEAKL15)
       #define MIRYOKU_LAYER_EXTRA MIRYOKU_ALTERNATIVES_BASE_BEAKL15
@@ -990,7 +998,9 @@ Body of miryoku_layer_selection.h.
 
 #if !defined(MIRYOKU_LAYER_TAP)
   #if defined (MIRYOKU_LAYERS_FLIP)
-    #if defined (MIRYOKU_TAP_AZERTY)
+    #if defined (MIRYOKU_TAP_AVERAK)
+      #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_AVERAK_FLIP
+    #elif defined (MIRYOKU_TAP_AZERTY)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_AZERTY_FLIP
     #elif defined (MIRYOKU_TAP_BEAKL15)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP
@@ -1014,7 +1024,9 @@ Body of miryoku_layer_selection.h.
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_COLEMAKDH_FLIP
     #endif
   #else
-    #if defined (MIRYOKU_TAP_AZERTY)
+    #if defined (MIRYOKU_TAP_AVERAK)
+      #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_AVERAK
+    #elif defined (MIRYOKU_TAP_AZERTY)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_AZERTY
     #elif defined (MIRYOKU_TAP_BEAKL15)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_BEAKL15
@@ -1240,6 +1252,9 @@ prepended.
 #pragma once
 
 
+#define MIRYOKU_ALTERNATIVES_BASE_AVERAK_FLIP \
+<<table-layer-taphold(alphas_table=averak, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
 <<table-layer-taphold(alphas_table=azerty, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -1269,6 +1284,9 @@ prepended.
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ_FLIP \
 <<table-layer-taphold(alphas_table=qwertz, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_AVERAK \
+<<table-layer-taphold(alphas_table=averak)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY \
 <<table-layer-taphold(alphas_table=azerty)>>
@@ -1301,6 +1319,9 @@ prepended.
 <<table-layer-taphold(alphas_table=qwertz)>>
 
 
+#define MIRYOKU_ALTERNATIVES_TAP_AVERAK_FLIP \
+<<table-layer-full(alphas_table=averak, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY_FLIP \
 <<table-layer-full(alphas_table=azerty, thumbs_table=thumbs-flip)>>
 
@@ -1330,6 +1351,9 @@ prepended.
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ_FLIP \
 <<table-layer-full(alphas_table=qwertz, thumbs_table=thumbs-flip)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_AVERAK \
+<<table-layer-full(alphas_table=averak, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY \
 <<table-layer-full(alphas_table=azerty, thumbs_table=thumbs)>>
@@ -1483,6 +1507,9 @@ prepended.
 #pragma once
 
 
+#define MIRYOKU_ALTERNATIVES_BASE_AVERAK_FLIP \
+<<table-layer-taphold(alphas_table=averak, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
 <<table-layer-taphold(alphas_table=azerty, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -1512,6 +1539,9 @@ prepended.
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ_FLIP \
 <<table-layer-taphold(alphas_table=qwertz, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_AVERAK \
+<<table-layer-taphold(alphas_table=averak)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY \
 <<table-layer-taphold(alphas_table=azerty)>>
@@ -1544,6 +1574,9 @@ prepended.
 <<table-layer-taphold(alphas_table=qwertz)>>
 
 
+#define MIRYOKU_ALTERNATIVES_TAP_AVERAK_FLIP \
+<<table-layer-full(alphas_table=averak, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY_FLIP \
 <<table-layer-full(alphas_table=azerty, thumbs_table=thumbs-flip)>>
 
@@ -1573,6 +1606,9 @@ prepended.
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ_FLIP \
 <<table-layer-full(alphas_table=qwertz, thumbs_table=thumbs-flip)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_AVERAK \
+<<table-layer-full(alphas_table=averak, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY \
 <<table-layer-full(alphas_table=azerty, thumbs_table=thumbs)>>
@@ -1724,6 +1760,9 @@ prepended.
 #pragma once
 
 
+#define MIRYOKU_ALTERNATIVES_BASE_AVERAK_FLIP \
+<<table-layer-taphold(alphas_table=averak, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
 <<table-layer-taphold(alphas_table=azerty, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
 
@@ -1753,6 +1792,9 @@ prepended.
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ_FLIP \
 <<table-layer-taphold(alphas_table=qwertz, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_AVERAK \
+<<table-layer-taphold(alphas_table=averak)>>
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY \
 <<table-layer-taphold(alphas_table=azerty)>>
@@ -1785,6 +1827,9 @@ prepended.
 <<table-layer-taphold(alphas_table=qwertz)>>
 
 
+#define MIRYOKU_ALTERNATIVES_TAP_AVERAK_FLIP \
+<<table-layer-full(alphas_table=averak, thumbs_table=thumbs-flip)>>
+
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY_FLIP \
 <<table-layer-full(alphas_table=azerty, thumbs_table=thumbs-flip)>>
 
@@ -1814,6 +1859,9 @@ prepended.
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ_FLIP \
 <<table-layer-full(alphas_table=qwertz, thumbs_table=thumbs-flip)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_AVERAK \
+<<table-layer-full(alphas_table=averak, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY \
 <<table-layer-full(alphas_table=azerty, thumbs_table=thumbs)>>
