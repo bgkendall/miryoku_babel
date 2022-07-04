@@ -312,8 +312,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Media
 
 #+NAME: media-r-vi
-| BL_BRTG       |               |                | BL_STEP        |  BL_TOGG      |
-| RGB_MOD       | RGB_HUI       | RGB_SAI        | RGB_VAI        | RGB_TOG       |
+| BL_BRTG       |               |                | BL_STEP        | BL_TOGG       |
 | MPRV          | VOLD          | VOLU           | MNXT           | EP_TOG        |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
 | MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
