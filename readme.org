@@ -143,7 +143,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 #+NAME: media-r
 | BL_TOGG       | BL_BRTG       |                |                | BL_STEP       |
-|               | MPRV          | VOLD           | VOLU           | MNXT          |
+| SLEP          | MPRV          | VOLD           | VOLU           | MNXT          |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
 | MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
@@ -313,7 +313,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: media-r-vi
 | BL_BRTG       |               |                | BL_STEP        | BL_TOGG       |
-| MPRV          | VOLD          | VOLU           | MNXT           | EP_TOG        |
+| MPRV          | VOLD          | VOLU           | MNXT           | SLEP          |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
 | MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
@@ -345,7 +345,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: media-r-invertedt
 | BL_TOGG       | BL_BRTG       | VOLU           |                | BL_STEP       |
-| EP_TOG        | MPRV          | VOLD           | MNXT           |               |
+| SLEP          | MPRV          | VOLD           | MNXT           |               |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
 | MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
@@ -692,6 +692,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | TAB         | TAB         | TAB             | tab           |
 | TILD        | TILD        | TILDE           | ~             |
 | TRNS        | TRNS        | &trans          | _             |
+| SLEP        | SLEP        | C_SLEEP         |               |
 | UNDS        | UNDS        | UNDER           | \_            |
 | UP          | UP          | UP              | up            |
 | VOLD        | VOLD        | C_VOL_DN        | vold          |
