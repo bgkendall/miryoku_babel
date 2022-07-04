@@ -142,8 +142,8 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Media
 
 #+NAME: media-r
-| RGB_TOG       | RGB_MOD       | RGB_HUI        | RGB_SAI        | RGB_VAI       |
-| BL_TOGG       | MPRV          | VOLD           | VOLU           | MNXT          |
+| BL_TOGG       | BL_BRTG       |                |                | BL_STEP       |
+|               | MPRV          | VOLD           | VOLU           | MNXT          |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
 | MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
@@ -188,7 +188,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: averak
 | Q    | W    | R    | P    | F    | J    | Y    | O    | L    | '    |
 | A    | S    | D    | T    | G    | M    | N    | E    | I    | U    |
-| Z    | X    | C    | V    | B    | K    | H    | ,    | DOT  | ESC  |
+| Z    | X    | C    | V    | ,    | DOT  | H    | B    | K    | ESC  |
 
 
 ***** AZERTY
@@ -312,6 +312,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Media
 
 #+NAME: media-r-vi
+| BL_BRTG       |               |                | BL_STEP        |  BL_TOGG      |
 | RGB_MOD       | RGB_HUI       | RGB_SAI        | RGB_VAI        | RGB_TOG       |
 | MPRV          | VOLD          | VOLU           | MNXT           | EP_TOG        |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
@@ -344,8 +345,8 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Media
 
 #+NAME: media-r-invertedt
-| RGB_TOG       | RGB_MOD       | VOLU           | RGB_HUI        | RGB_SAI       |
-| EP_TOG        | MPRV          | VOLD           | MNXT           | RGB_VAI       |
+| BL_TOGG       | BL_BRTG       | VOLU           |                | BL_STEP       |
+| EP_TOG        | MPRV          | VOLD           | MNXT           |               |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
 | MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
 
@@ -598,7 +599,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | AT          | AT          | AT              | @             |
 | BSLS        | BSLS        | BSLH            | \\            |
 | BSPC        | BSPC        | BSPC            | bspc          |
-| BOOT        | QK_BOOT     | &bootloader     |               |
+| BOOT        | RESET       | &bootloader     |               |
 | BT_CLR      |             | &bt BT_CLR      |               |
 | BT_SEL_0    |             | &u_bt_sel_0     |               |
 | BT_SEL_1    |             | &u_bt_sel_1     |               |
