@@ -107,7 +107,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |       | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
 | LCTL     | LALT      | LGUI        | LSFT       |         |       | LSFT       | LGUI        | LALT      | LCTL     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
+| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_NAV   | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
 
 *** Nav
@@ -674,7 +674,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | PLUS        | PLUS        | PLUS            | +             |
 | PSCR        | PSCR        | PSCRN           | sysrq         |
 | QUES        | QUES        | QMARK           | ?             |
-| QUOT        | QUOT        | SQT             | U_QUOT        |
+| QUOT        | TD(QUOT)    | SQT             | U_QUOT        |
 | RBRC        | RBRC        | RBKT            | ]             |
 | RCBR        | RCBR        | RBRC            | }             |
 | RESET       |             | &reset          |               |
@@ -1209,7 +1209,7 @@ Keycodes that match any of these prefixes will not have ~KC_~ automatically
 prepended.
 
 #+NAME: nonkc
-| U_ | RGB_ | OUT_ | RESET | S( | C( | SCMD( | LCMD( | DF( | RALT( | BL_ | QK_ |
+| U_ | RGB_ | OUT_ | RESET | S( | C( | SCMD( | LCMD( | DF( | RALT( | BL_ | QK_ | TD( |
 
 
 **** license-qmk
