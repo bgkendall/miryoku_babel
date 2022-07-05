@@ -672,7 +672,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | PGUP        | PGUP        | PG_UP           | pgup          |
 | PIPE        | PIPE        | PIPE            | U_PIPE        |
 | PLUS        | PLUS        | PLUS            | +             |
-| PSCR        | G(S(4))     | PSCRN           | sysrq         |
+| PSCR        | G(S(KC_4))  | PSCRN           | sysrq         |
 | QUES        | QUES        | QMARK           | ?             |
 | QUOT        | TD(QUOT)    | SQT             | U_QUOT        |
 | RBRC        | RBRC        | RBKT            | ]             |
