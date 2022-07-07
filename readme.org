@@ -125,7 +125,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 |       | MS_L  | MS_D  | MS_U  | MS_R  |
 |       | WH_L  | WH_D  | WH_U  | WH_R  |
-| BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
+| BTN1  | BTN3  | BTN2  | U_NP  | U_NP  |
 
 
 *** Button
@@ -136,7 +136,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 
 #+NAME: button-thumbs
-| U_NP  | U_NP  | BTN3  | BTN2  | BTN1  | SPC   | ENT   | BSPC  | U_NP  | U_NP  |
+| U_NP  | U_NP  | BTN2  | BTN3  | BTN1  | SPC   | ENT   | BSPC  | U_NP  | U_NP  |
 
 
 *** Media
@@ -306,7 +306,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 | MS_L  | MS_D  | MS_U  | MS_R  |       |
 | WH_L  | WH_D  | WH_U  | WH_R  |       |
-| BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
+| BTN1  | BTN3  | BTN2  | U_NP  | U_NP  |
 
 
 ****** Media
@@ -338,7 +338,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 |       | WH_L  | MS_U  | WH_R  | WH_U  |
 |       | MS_L  | MS_D  | MS_R  | WH_D  |
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-| BTN1  | BTN2  | BTN3  | U_NP  | U_NP  |
+| BTN1  | BTN3  | BTN2  | U_NP  | U_NP  |
 
 
 ****** Media
@@ -412,7 +412,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | HOME  | PGDN  | PGUP  | END   | INS   |
 | LEFT  | DOWN  | UP    | RGHT  | CAPS  |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  |       | SPC   | TAB   |
+| U_NP  | U_NP  | SPC   | S(TAB)| TAB   |
 
 
 ******** Mouse
@@ -421,7 +421,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | WH_L  | WH_D  | WH_U  | WH_R  |       |
 | MS_L  | MS_D  | MS_U  | MS_R  |       |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | BTN3  | BTN1  | BTN2  |
+| U_NP  | U_NP  | BTN2  | BTN3  | BTN1  |
 
 
 ******** Media
@@ -444,7 +444,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | PGUP  | HOME  | UP    | END   | INS   |
 | PGDN  | LEFT  | DOWN  | RGHT  | CAPS  |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | DEL   | BSPC  | ENT   |
+| U_NP  | U_NP  | SPC   | S(TAB)| TAB   |
 
 
 ******** Mouse
@@ -453,7 +453,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | WH_U  | WH_L  | MS_U  | WH_R  |       |
 | WH_D  | MS_L  | MS_D  | MS_R  |       |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | BTN3  | BTN1  | BTN2  |
+| U_NP  | U_NP  | BTN2  | BTN3  | BTN1  |
 
 
 ******** Media
