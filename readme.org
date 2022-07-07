@@ -172,7 +172,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | F12  | F7   | F8   | F9   | F13  |
 | F11  | F4   | F5   | F6   | PSCR |
 | F10  | F1   | F2   | F3   | PAUS |
-| U_NP | U_NP | APP  | SPC  | TAB  |
+| U_NP | U_NP | PENT | SPC  | TAB  |
 
 
 *** Alternative Layouts
@@ -444,7 +444,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | PGUP  | HOME  | UP    | END   | INS   |
 | PGDN  | LEFT  | DOWN  | RGHT  | CAPS  |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | SPC   | S(TAB)| TAB   |
+| U_NP  | U_NP  | SPC   | BTAB  | TAB   |
 
 
 ******** Mouse
@@ -600,6 +600,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | BRIU        | BRIU        | C_BRI_UP        |               |
 | BSLS        | BSLS        | BSLH            | \\            |
 | BSPC        | BSPC        | BSPC            | bspc          |
+| BTAB        | S(KC_TAB)   | LS(TAB)         |               |
 | BOOT        | RESET       | &bootloader     |               |
 | BT_CLR      |             | &bt BT_CLR      |               |
 | BT_SEL_0    |             | &u_bt_sel_0     |               |
