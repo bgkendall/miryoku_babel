@@ -104,10 +104,10 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 **** Hold
 
 #+NAME: hold
-| BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |       | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
-| LCTL     | LALT      | LGUI        | LSFT       | CAPSWRD |CAPSWRD| LSFT       | LGUI        | LALT      | LCTL     |
-| U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_SYM   | U_NAV | U_NUM      | U_FUN       | U_NP      | U_NP     |
+| BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |         | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
+| LCTL     | LALT      | LGUI        | LSFT       | CAPSWRD | CAPSWRD | LSFT       | LGUI        | LALT      | LCTL     |
+| U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |         | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
+| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_SYM   |  U_NAV  | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
 
 *** Nav
@@ -145,7 +145,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | BL_TOGG       | BL_BRTG       | BRID           | BRIU           | BL_STEP       |
 | SLEP          | MPRV          | VOLD           | VOLU           | MNXT          |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
-| MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
+| MPLY          | PENT          | MUTE           | U_NP           | U_NP          |
 
 
 *** Num
@@ -315,7 +315,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | BL_BRTG       | BRID          | BRIU           | BL_STEP        | BL_TOGG       |
 | MPRV          | VOLD          | VOLU           | MNXT           | SLEP          |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
-| MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
+| MPLY          | PENT          | MUTE           | U_NP           | U_NP          |
 
 
 ***** Inverted-T
@@ -347,7 +347,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | BL_TOGG       | BL_BRTG       | VOLU           | BL_STEP        | BRIU          |
 | SLEP          | MPRV          | VOLD           | MNXT           | BRID          |
 | RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
-| MPLY          | MSTP          | MUTE           | U_NP           | U_NP          |
+| MPLY          | PENT          | MUTE           | U_NP           | U_NP          |
 
 
 **** Layers
@@ -367,10 +367,10 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Hold
 
 #+NAME: hold-flip
-| BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |       |         | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
-| LGUI     | LALT      | LCTL        | LSFT       |       |         | LSFT       | LCTL        | LALT      | LGUI     |
-| U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |       |         | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_FUN       | U_NUM      | U_SYM | U_MOUSE | U_NAV      | U_MEDIA     | U_NP      | U_NP     |
+| BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |         | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
+| LGUI     | LALT      | LCTL        | LSFT       | CAPSWRD | CAPSWRD | LSFT       | LCTL        | LALT      | LGUI     |
+| U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |         | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
+| U_NP     | U_NP      | U_FUN       | U_NUM      |  U_SYM  | U_MOUSE | U_NAV      | U_MEDIA     | U_NP      | U_NP     |
 
 
 ****** Num
@@ -397,7 +397,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | PSCR | F7   | F8   | F9   | F12  |
 | SLCK | F4   | F5   | F6   | F11  |
 | PAUS | F1   | F2   | F3   | F10  |
-| TAB  | SPC  | APP  | U_NP | U_NP |
+| SPC  | <    | >    | U_NP | U_NP |
 
 
 ****** Nav
