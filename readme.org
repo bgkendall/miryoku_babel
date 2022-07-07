@@ -107,7 +107,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |       | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
 | LCTL     | LALT      | LGUI        | LSFT       | CAPSWRD |CAPSWRD| LSFT       | LGUI        | LALT      | LCTL     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_NAV   | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
+| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_SYM   | U_NAV | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
 
 *** Nav
@@ -412,7 +412,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | HOME  | PGDN  | PGUP  | END   | INS   |
 | LEFT  | DOWN  | UP    | RGHT  | CAPS  |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | DEL   | BSPC  | ENT   |
+| U_NP  | U_NP  |       | SPC   | TAB   |
 
 
 ******** Mouse
@@ -669,6 +669,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad).
 | OUT_BT      | OUT_BT      | &out OUT_BT     |               |
 | OUT_USB     | OUT_USB     | &out OUT_USB    |               |
 | PAUS        | PAUS        | PAUSE_BREAK     | pause         |
+| PENT        | PENT        | KP_ENTER        |               |
 | PERC        | PERC        | PRCT            | %             |
 | PGDN        | PGDN        | PG_DN           | pgdn          |
 | PGUP        | PGUP        | PG_UP           | pgup          |
