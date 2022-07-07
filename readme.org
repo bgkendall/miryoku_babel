@@ -172,7 +172,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | F12  | F7   | F8   | F9   | F13  |
 | F11  | F4   | F5   | F6   | PSCR |
 | F10  | F1   | F2   | F3   | PAUS |
-| U_NP | U_NP | PENT | SPC  | TAB  |
+| U_NP | U_NP | SPC  | <    | >    |
 
 
 *** Alternative Layouts
