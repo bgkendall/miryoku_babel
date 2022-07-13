@@ -136,7 +136,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 
 #+NAME: button-thumbs
-| U_NP  | U_NP  | BTN2  | BTN3  | BTN1  | SPC   | ENT   | BSPC  | U_NP  | U_NP  |
+| U_NP  | U_NP  | ESC   | SPC   | TAB   | ENT   | BSPC  | MINS  | U_NP  | U_NP  |
 
 
 *** Media
