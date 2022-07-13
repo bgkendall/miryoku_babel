@@ -98,7 +98,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 ***** Thumbs
 
 #+NAME: thumbs
-| U_NP  | U_NP  | /     | MINS  | TAB   | SPC   | ENT   | BSPC  | U_NP  | U_NP  |
+| U_NP  | U_NP  | ESC   | SPC   | TAB   | ENT   | BSPC  | MINS  | U_NP  | U_NP  |
 
 
 **** Hold
@@ -107,7 +107,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |         | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
 | LCTL     | LALT      | LGUI        | LSFT       | CAPSWRD | CAPSWRD | LSFT       | LGUI        | LALT      | LCTL     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |         | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_SYM   |  U_NAV  | U_NUM      | U_FUN       | U_NP      | U_NP     |
+| U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_NUM   | U_SYM      | U_FUN       | U_NP      | U_NP     |
 
 
 *** Nav
@@ -188,7 +188,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: averak
 | Q    | W    | R    | P    | F    | J    | Y    | O    | L    | '    |
 | A    | S    | D    | T    | G    | M    | N    | E    | I    | U    |
-| Z    | X    | C    | V    | ,    | DOT  | H    | B    | K    | ESC  |
+| Z    | X    | C    | V    | ,    | DOT  | H    | B    | K    | /    |
 
 
 ***** AZERTY
