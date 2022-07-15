@@ -144,7 +144,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: media-r
 | BL_TOGG       | BL_BRTG       | BRID           | BRIU           | BL_STEP       |
 | SLEP          | MPRV          | VOLD           | VOLU           | MNXT          |
-| RALT(KC_LBRC) | RALT(KC_LCBR) | RALT(KC_RBRC)  | RALT(KC_RCBR)  | RALT(KC_SCLN) |
+| RALT(KC_SCLN) | RALT(KC_LBRC) | RALT(KC_LCBR)  | RALT(KC_RBRC)  | RALT(KC_RCBR) |
 | MPLY          | PENT          | MUTE           | U_NP           | U_NP          |
 
 
