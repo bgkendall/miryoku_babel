@@ -172,7 +172,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | F12  | F7   | F8   | F9   | F13  |
 | F11  | F4   | F5   | F6   | PSCR |
 | F10  | F1   | F2   | F3   | PAUS |
-| U_NP | U_NP | SPC  | <    | >    |
+| U_NP | U_NP | BTAB | SPC  | TAB  |
 
 
 *** Alternative Layouts
@@ -397,7 +397,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | PSCR | F7   | F8   | F9   | F12  |
 | SLCK | F4   | F5   | F6   | F11  |
 | PAUS | F1   | F2   | F3   | F10  |
-| SPC  | <    | >    | U_NP | U_NP |
+| TAB  | SPC  | BTAB | U_NP | U_NP |
 
 
 ****** Nav
